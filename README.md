@@ -29,6 +29,11 @@
 
 * `curl https://bootstrap.pypa.io/get-pip.py | python3`
 
+### Oh My Zsh
+
+* `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+
 ### Powerline
 
 * `pip3 install powerline-status`
