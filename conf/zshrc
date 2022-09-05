@@ -1,0 +1,29 @@
+export DEFAULT_USER=cloud
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/cloud/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="agnoster"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git history-substring-search)
+
+source $ZSH/oh-my-zsh.sh
+
+alias ls="ls -CFG"
+alias ctags="`brew --prefix`/bin/ctags"
+
+
+# ftp related
+alias ftpon='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
+alias ftpoff='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
+alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+alias ipy3="python3 -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+

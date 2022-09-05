@@ -38,3 +38,13 @@
 ### Tmux powerline
 
 * `source "~/Library/Python/3.8/lib/python/site-packages/powerline/bindings/tmux/powerline.conf"`
+
+### VIM
+
+* Plug-in manager (vim-plug)
+
+  `curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
+* `cp vimrc ~/.vimrc`
+* `vi -> :PlugInstall`

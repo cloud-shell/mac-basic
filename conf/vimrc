@@ -1,0 +1,33 @@
+set laststatus=2
+set hlsearch
+syn on
+
+call plug#begin()
+Plug 'vim-airline/vim-airline'
+Plug 'camspiers/lens.vim'
+call plug#end()
+
+"execute pathogen#infect()
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tagbar#enabled = 1
+
+" set for lens.vim
+let g:lens#height_resize_min = 5
+let g:lens#height_resize_max = 100
+let g:lens#animate = 0
+
+if has('gui_running')
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h11
+endif
+
+" tab to space, and use 4 space for indentation
+set softtabstop=4                              " TAB키를 눌렀을때 몇 칸을 이동?
+set tabstop=4                                  " 하나의 TAB을 몇 칸으로 인식? 
+set shiftwidth=4                               " <<, >>을 눌렀을 때 몇 칸을 이동?
+set expandtab                                  " TAB을 space로 인식
+au Bufenter *.\(c\|cpp\|h\) set et
+
+" Editor Config
+set number
+set mouse=a
+"set clipboard=unnamed
